@@ -13,14 +13,6 @@
       to your section:
     </p>
 
-            <!--Adding section tags-->
-    
-
-
-    <section id = "TB"></section>
-
-    <section id = "PO"></section>
-
     <ul>
         <li><a href = "#Story_Book">Story Books Selection</a></li>
         <li><a href = "#TB">Textbooks Section</a></li>
@@ -76,7 +68,33 @@
     <a href = "#BackTop">🔝Back to Top</a>
 
     <hr>
+    
+    <h3>📑School Textbooks</h3>
+
+        <table border = "1" cellpadding = "1">
+            <tr>
+              <th>Subject</th>
+              <th>Grade</th>
+              <th>Medium</th>
+              <th>Price</th>
+              <th>Availability</th>
+            </tr>
+
+                  <tr>
+                              <td>Information & Communication Technology (ICT)</td>
+                              <td>Grade 10/11</td>
+                              <td>English Medium</td>
+                              <td>Rs.450.00</td>
+                              <td>Available</td>
+                  </tr>
+        </table>
+
+
+    <section id = "TB"></section>
+
+
     <h2>🛒Quick Order Reservation</h2>
+    <section id = "PO"></section>
     <p>Fill out this form to reserve your books before coming to the store</p>
 
       <!--Form section-->
@@ -84,15 +102,38 @@
         <legend>Order Details</legend>
           <form>
             
+                          <label for = "Admission No">Student Admission No:</label><br>
+                          <input type = "text" id = "Admission No" placeholder = "e.g, ST-1234"><br>
+
+                  <br>
+
+
+                          <label for = "Book Selection">Select Book to Reserve:</label><br>
+                          <select id = "Book Selection" name = "Book Selection">
+                            <option value = "Game of Thrones">Game of Thrones(Rs.1999)</option>
+                            <option value = "A Song of Achilles">A Song of Achilles(Rs.1800)</option>
+                            <option value = "Assassins creed">The Assassin's creed : Renaissance(Rs.2200)</option>
+                          </select><br>
+
+                  <br>
+
+
+                          <label for = "Collection Date" id = "Date">Preferred Collection Date:</label><br>
+                          <input type = "Date" id = "Date" name = "Date"><br>
+
+                  <br>
+
+                          <label for = "Special Notes" id = "Special notes">Special Notes/Instructions:</label><br>
+                          <textarea placeholder = "Any Specific requirements..."></textarea><br>
+                  <br>
+                          <input type = "submit" value = "Submit Reservation">
+                          <input type = "reset" value = "Reset Form">
+                 
           </form>
       </fieldset>
 
-
-    <h2>Textbooks Selection</h2>
-
-
-    <h2>Place an Order</h2>
-
+      <small>2026 Apex School Bookshop Management System.</small>
+    
 
   </body>
 </html>
